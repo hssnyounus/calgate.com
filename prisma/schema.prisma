@@ -1,0 +1,32 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model CompanyServiceImages {
+  id               Int             @id @default(autoincrement())
+  image            String?
+  companyService   CompanyService? @relation(fields: [companyServiceId], references: [id], onDelete: Cascade)
+  companyServiceId Int?
+  createdAt        DateTime        @default(now())
+  updatedAt        DateTime        @updatedAt
+}
+
+model CompanyService {
+  id                   Int                    @id @default(autoincrement())
+  title                String
+  description          String?                @db.Text
+  status               Boolean                @default(false)
+  createdAt            DateTime               @default(now()) @map(name: "created_at")
+  updatedAt            DateTime               @updatedAt @map(name: "updated_at")
+  CompanyServiceImages CompanyServiceImages[]
+
+  @@map("companyservices")
+}
