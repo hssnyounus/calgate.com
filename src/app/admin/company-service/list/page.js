@@ -1,3 +1,5 @@
+"use client"
+
 import ComapnyServiceList from "@/components/Admin/CompanyService/ComapnyServiceList";
 
 import React from "react";

@@ -1,3 +1,5 @@
+"use client"
+
 import "./Modal.css";
 
 import * as React from "react";

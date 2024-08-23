@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import { Tooltip as TooltipComponent } from "@nextui-org/react";
 const Tooltip = (props) => {

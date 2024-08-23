@@ -1,3 +1,5 @@
+"use client"
+
 import CreateCompanyService from "@/components/Admin/CompanyService/CreateCompanyService";
 import React from "react";
 

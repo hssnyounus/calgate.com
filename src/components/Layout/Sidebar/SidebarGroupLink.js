@@ -1,3 +1,5 @@
+"use client"
+
 import { ReactNode, useState } from "react";
 
 const SidebarLinkGroup = ({ children, activeCondition }) => {
