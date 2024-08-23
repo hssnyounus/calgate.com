@@ -1,3 +1,5 @@
+"use client"
+
 import React, { forwardRef } from "react";
 import { Button as ButtonComponent } from "@nextui-org/react";
 import { Plus } from "lucide-react";

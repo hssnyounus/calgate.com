@@ -1,3 +1,5 @@
+"use client"
+
 import { createEmptyHistoryState } from "@lexical/react/LexicalHistoryPlugin";
 import * as React from "react";
 import { createContext, useContext, useMemo } from "react";

@@ -1,3 +1,5 @@
+"use client"
+
 import { $applyNodeReplacement, TextNode } from "lexical";
 
 export class EmojiNode extends TextNode {

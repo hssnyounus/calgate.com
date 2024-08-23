@@ -1,3 +1,5 @@
+"use client"
+
 import classNames from "@/lib/classNames";
 import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu";
 import { CheckCircle } from "lucide-react";

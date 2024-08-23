@@ -1,3 +1,5 @@
+"use client"
+
 import { Avatar as AvatarUser } from "@nextui-org/react";
 import React from "react";
 

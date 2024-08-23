@@ -1,3 +1,5 @@
+"use client"
+
 import './ImageNode.css';
 
 import { AutoFocusPlugin } from '@lexical/react/LexicalAutoFocusPlugin';

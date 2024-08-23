@@ -1,3 +1,4 @@
+"use client"
 import classNames from "@/lib/classNames";
 import React, { useState } from "react";
 

@@ -30,8 +30,7 @@ export class CompanyServiceService {
 	}
 	async allServices() {
 		try {
-			const services = [];
-			return (services = this.companyServiceRepository.getServices());
+			return  this.companyServiceRepository.getServices();
 		} catch (error) {
 			if (error instanceof Prisma.PrismaClientInitializationError) {
 				throw new DatabaseError(error.message);
