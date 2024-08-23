@@ -1,3 +1,4 @@
+"use client"
 import { $getRoot, $getSelection } from 'lexical';
 import { useEffect, useState } from 'react';
 
@@ -11,14 +12,10 @@ import { CodeNode, CodeHighlightNode } from '@lexical/code';
 import { TableNode, TableCellNode, TableRowNode } from '@lexical/table';
 import { AutoLinkNode, LinkNode } from '@lexical/link';
 import { TRANSFORMERS } from '@lexical/markdown';
-import { LexicalComposer } from '@lexical/react/LexicalComposer';
-import { ContentEditable } from '@lexical/react/LexicalContentEditable';
 import LexicalErrorBoundary from '@lexical/react/LexicalErrorBoundary';
-import { HistoryPlugin } from '@lexical/react/LexicalHistoryPlugin';
 import { LinkPlugin } from '@lexical/react/LexicalLinkPlugin';
 import { ListPlugin } from '@lexical/react/LexicalListPlugin';
 import { MarkdownShortcutPlugin } from '@lexical/react/LexicalMarkdownShortcutPlugin';
-import { RichTextPlugin } from '@lexical/react/LexicalRichTextPlugin';
 import classNames from '@/lib/classNames';
 
 import EditorTheme from './EditorTheme';
@@ -27,11 +24,7 @@ import AutoLinkPlugin from './plugins/AutoLinkPlugin';
 import './editor.css';
 import TreeViewPlugin from './plugins/TreeViewPlugin';
 import { AutoFocusPlugin } from '@lexical/react/LexicalAutoFocusPlugin';
-import { LexicalComposer } from '@lexical/react/LexicalComposer';
-import { ContentEditable } from '@lexical/react/LexicalContentEditable';
-import LexicalErrorBoundary from '@lexical/react/LexicalErrorBoundary';
-import { HistoryPlugin } from '@lexical/react/LexicalHistoryPlugin';
-import { RichTextPlugin } from '@lexical/react/LexicalRichTextPlugin';
+
 import { ImageNode } from './Nodes/ImageNode';
 import ImagesPlugin from './plugins/ImagePlugin';
 import EmojisPlugin from './plugins/EmojisPlugin';

@@ -1,3 +1,4 @@
+"use client"
 import './ImageResizer.css';
 import * as React from 'react';
 import { useRef } from 'react';

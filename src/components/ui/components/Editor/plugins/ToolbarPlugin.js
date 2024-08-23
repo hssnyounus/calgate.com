@@ -1,3 +1,4 @@
+"use client"
 import { $generateHtmlFromNodes, $generateNodesFromDOM } from '@lexical/html';
 import { $isLinkNode, TOGGLE_LINK_COMMAND } from '@lexical/link';
 import { $isListNode, INSERT_ORDERED_LIST_COMMAND, INSERT_UNORDERED_LIST_COMMAND, ListNode, REMOVE_LIST_COMMAND } from '@lexical/list';
