@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
 
   experimental: {
-    serverActions: true,
+    serverActions: false,
     optimizePackageImports: ["icons"],
     webVitalsAttribution: ["CLS", "LCP"],
   },
